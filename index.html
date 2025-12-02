@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rio Engineering</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <script src="js/sidebar.js"></script>
+</head>
+<body>
+    <header>
+        <aside>
+            <ul>
+                <li>
+                    <div class="centralized-in-sidebar">
+                        <img class="logo" src="assets/logo.png" alt="Rio Engineering logo">
+                    </div>
+                </li>
+                <li><hr></li>
+                <li onclick=hideSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg></a></li>
+                <li><a href="#">accueil</a></li>
+                <li><a href="#">à propos</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">projets</a></li>
+                <li><!---->
+                    <div class="centralized-in-sidebar">
+                        <a href="" class="no-link-hover"><button class="btn-primary">contacter nous</button></a>
+                    </div>
+                </li>
+            </ul>
+        </aside>
+        <nav>
+            <ul>
+                <li><a href="#" class="no-link-hover"><img class="logo" src="assets/logo.png" alt="Rio Engineering logo"></a></li>
+                <li class="hideOnPhone"><a href="#">accueil</a></li>
+                <li class="hideOnPhone" style="white-space: nowrap"><a href="#">à propos</a></li>
+                <li class="hideOnPhone"><a href="#">services</a></li>
+                <li class="hideOnPhone"><a href="#">projets</a></li>
+                <li class="hideOnPhone"><a href="" class="no-link-hover hide900px"><button class="btn-primary">contacter nous</button></a></li>
+                <li class="displayOnPhone" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        <hero></hero>
+        
+    </header>
+
+
+
+
+    <main>
+        <section class="hero">
+
+            <h1>LA <strong>CONFIANCE</strong> N'EST QU'UNE DES CHOSEs QUE NOUS CONSTRUISONS BIEN</h1>
+            <div class="hero-paragraphe">
+                <p><strong>RIO ENGINEERING</strong> transforme vos espaces avec innovation, efficacité et qualité grâce à une équipe experte en construction et aménagement.</p>
+            </div>
+            <div class="hero-btn">
+                <button class="btn-primary">nos services</button>
+                <button class="btn-secondary">contacter nous</button>
+            </div>
+
+        </section>
+    </main>
+
+
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,133 @@
+/*_________________________imports___________________________*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/*_________________________core_________________________*/
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+html{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600; 
+    text-transform: uppercase;
+}
+
+body{
+    min-height: 100vh;
+
+    background: #1b1826;
+
+}
+
+/*_________________________text_&_titles_______________________*/
+h1{
+    font-size: 40px;
+    max-width: 1000px;
+}
+
+h1 strong{
+    color: transparent;
+    text-stroke: 0.9px #f29007;
+    -webkit-text-stroke: 0.9px #f29007;
+}
+
+strong{
+    color: #f29007;
+}
+
+
+
+/*_________________________links_______________________*/
+
+a{
+    text-decoration: none;
+
+    color: #ffffff;
+
+    transition: transform 0.4s ease;
+
+}
+
+a:not(.no-link-hover):hover{
+    background: rgba(211, 211, 211, 0.3);
+    color: #f8b034d7;
+
+    transform: scale(1.01);
+    
+}
+
+/*_________________________btns_______________________*/
+
+button{
+    height: 32px;
+    padding: 0 14px;
+
+    border-radius: 20px;
+    box-shadow: -1.5px 1.5px 4px #f290074f;
+    
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: inherit; 
+    white-space: nowrap;
+    
+    transition: transform 0.4s ease;
+    
+}
+
+.btn-primary{
+    border: none;
+    
+    background: #f29007;
+    color: white;
+}
+
+.btn-secondary{
+    border: 0.01px solid #f29007;
+
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    color: white;
+
+}
+
+
+
+button:hover{
+    transform: scale(1.03);
+
+    cursor: pointer;
+
+}
+
+.btn-primary:hover{
+    background: #f8af34;
+    box-shadow: -3px 3px 4px #f8b03435;
+
+}
+
+.btn-secondary:hover{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+    
+}
+
+
+/*_________________________lists_______________________*/
+
+ul{
+    list-style: none;
+}
+
+
+
+
+/*
+#2e1311
+
+*/

@@ -1,0 +1,46 @@
+/*_________________________hero_section______________________*/
+.hero{
+    width: 100%;
+    min-height: 90vh; 
+    
+    padding: 0 clamp(300px, 30vw);
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to bottom, #2e1311 0%, #1b1826 100%);
+}
+
+/*_________________________hero_content______________________*/
+
+.hero h1,h2,h3,p{
+    color: white;
+    text-align: center;
+}
+
+
+.hero-paragraphe{
+    flex: 0 0 auto;
+    width: clamp(250px, 50vw, 500px);
+    padding: 16px 0 65px 0;
+    
+}
+
+/*_________________________hero_btns______________________*/
+
+.hero-btn{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 300px;
+
+}
+
+@media(max-width: 400px){
+    .hero-btn{
+        width: 280px;
+        
+    }
+}

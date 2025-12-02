@@ -1,0 +1,89 @@
+
+
+/*_______________________logo_____________________________*/
+
+.logo{
+    width: clamp(120px, 18vw, 150px);
+    height: auto;
+}
+
+
+
+
+
+/*_________________________nav_______________________________*/
+
+nav{
+    position: fixed;
+    width: 100%;
+    
+}
+
+nav ul{
+    
+    
+
+    
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    box-shadow: 0 3px 5px rgba(72, 72, 72, 0.1);
+    border-radius: 0 0 10px 10px;
+
+    
+    
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+
+}
+
+nav li{
+    height: 50px;
+    
+}
+
+nav li:first-child{
+    margin-right: auto;
+    
+}
+
+nav li button{
+    margin-left: 10vw;
+    
+}
+
+
+nav a{
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    padding: 0 2vw;
+
+}
+
+
+/*_________________________nav_for_phone_____________________________*/
+
+@media(max-width: 600px){
+    .hideOnPhone{
+        display: none;
+    }
+}
+
+@media(min-width: 600px){
+    .displayOnPhone{
+        display: none;
+    }
+}
+
+@media(max-width: 900px){
+    .hide900px{
+        display: none;
+    }
+}
