@@ -1,0 +1,101 @@
+/*____________________section_contact_________________________*/
+
+.contact{
+
+    display: grid;
+    grid-template-rows: 250px auto auto;
+    align-items: center;
+    gap: 50px;
+
+}
+
+
+/*__________________________contact_inner_containers____________________________*/
+
+.contact-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+
+
+
+
+
+/*__________________________contact_text____________________________*/
+
+.contact-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+
+    height: 100%;
+}
+
+.contact-text h2{
+    font-size: 35px;
+}
+
+/*__________________________contact_infos____________________________*/
+
+.contact-infos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    padding: 0 200px;
+
+    
+}
+
+
+
+.contact-infos p{
+    font-size: 15px;
+}
+
+.contact-infos span i{
+    color: #f29007;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+
+.info2{
+    white-space: wrap;
+    
+}
+
+/*__________________________contact_infos_on_Phones__________________________*/
+
+@media(max-width: 850px){
+    .contact-infos{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+
+}
+
+@media(max-width: 450px){
+    .contact-text h2{
+        font-size: 25px;
+    }
+
+    .contact-text p{
+        font-size: 10px;
+    }
+
+
+}

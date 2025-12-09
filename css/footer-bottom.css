@@ -1,0 +1,5 @@
+.bootom{
+    display: grid;
+    grid-template: 3fr 1fr/ 2fr 1fr 1fr 2fr;
+    grid-template-areas: "sub-about menu . newsletter" "copyright copyright copyright copyright";
+}

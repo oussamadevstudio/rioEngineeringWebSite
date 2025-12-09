@@ -21,7 +21,7 @@ html{
 body{
     min-height: 100vh;
 
-    background: #1b1826;
+    background: white;
 
 }
 
@@ -33,12 +33,16 @@ h1{
 
 h1 strong{
     color: transparent;
-    text-stroke: 0.9px #f29007;
-    -webkit-text-stroke: 0.9px #f29007;
+
+    -webkit-text-stroke: 1.2px #f29007;
 }
 
 strong{
     color: #f29007;
+}
+
+h1, h2, h3{
+    text-align: center;
 }
 
 
@@ -47,8 +51,13 @@ strong{
 
 a{
     text-decoration: none;
+}
 
-    color: #ffffff;
+a:not(.service-bottom-link a){
+    
+
+    color: #7f7f7f;
+    mix-blend-mode: difference;
 
     transition: transform 0.4s ease;
 
@@ -127,7 +136,3 @@ ul{
 
 
 
-/*
-#2e1311
-
-*/
