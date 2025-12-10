@@ -3,7 +3,7 @@
 .contact{
 
     display: grid;
-    grid-template-rows: 250px auto auto;
+    grid-template-rows: 1fr auto auto;
     align-items: center;
     gap: 50px;
 
@@ -29,17 +29,26 @@
 /*__________________________contact_text____________________________*/
 
 .contact-text{
+    padding-top: 90px;
+
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: center;
 
     height: 100%;
+
+
+    white-space: normal;
+    text-align: center;  
+    
 }
 
 .contact-text h2{
     font-size: 35px;
+    
 }
+
 
 /*__________________________contact_infos____________________________*/
 
@@ -98,4 +107,16 @@
     }
 
 
+}
+
+@media(max-width: 1250px){
+    .contact-btns{
+        flex-flow: column wrap;
+}
+    .contact-infos{
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 40px;
+   
+}
 }

@@ -4,6 +4,14 @@ footer{
     min-height: 90vh;
 
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
 }
 
+footer p{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+footer p, h2, h3{
+    white-space: normal;
+}

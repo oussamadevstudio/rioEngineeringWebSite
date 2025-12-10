@@ -25,3 +25,14 @@ span .arrow{
 
 }
 
+/*_________________________social_media______________________*/
+
+.social-media-icons{
+    font-size: 30px;
+    color: #cbd5e1;
+}
+
+.social-media-icons:hover{
+    
+    color: #f29007;
+}

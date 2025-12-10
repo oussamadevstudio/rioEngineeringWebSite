@@ -1,5 +1,125 @@
-.bootom{
+.bottom{
+    padding: 150px 50px 0 50px; 
+
+
     display: grid;
-    grid-template: 3fr 1fr/ 2fr 1fr 1fr 2fr;
-    grid-template-areas: "sub-about menu . newsletter" "copyright copyright copyright copyright";
+    grid-template: 
+        "sub-about menu . newsletter" 3fr
+        "copyright copyright copyright copyright" 1fr
+        / 2fr 1fr 1fr 2fr;
+}
+
+.bottom h3{
+    color: #f8af34;
+}
+
+/*_________________________newsletter_______________________*/
+
+.newsletter{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.newsletter button{
+    width: 450px;
+    height: 40px;
+}
+
+/*_________________________menu_______________________*/
+
+.menu{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.menu h3{
+    text-align: left;
+}
+
+.menu li:first-child{
+    margin-bottom: 20px; 
+}
+
+.menu a{
+    transition: transform 0.4s ease;
+
+    color: #cbd5e1;
+}
+.menu a:hover{
+    color: #f29007;
+
+    transform: scale(1.01);
+}
+
+
+/*_________________________menu_______________________*/
+
+.sub-about{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: start;
+
+}
+
+.sub-about p, h3{
+    text-align: left;
+}
+
+/*_________________________social_media______________________*/
+
+.social-media{
+    display: flex; 
+    gap: 13px;
+    justify-content: start;
+
+    margin-top: 23px;
+}
+
+/*_________________________copyright______________________*/
+
+.copyright p{
+    margin: 10px 0;
+    text-align: left;
+}
+
+.copyright hr{
+    opacity: 20%;
+
+    margin: 0;
+}
+
+.copyright{
+    margin: 20px 0;
+}
+
+/*_________________________On_Mobile______________________*/
+
+@media(max-width: 1200px){
+    .bottom{
+    grid-template: 
+        "sub-about" auto
+        "menu" auto
+        "newsletter" auto
+        "copyright" auto
+        ;
+    gap: 20px;
+      
+    }
+    .newsletter{
+        align-items: start;
+        
+    }
+
+    .newsletter p{
+        text-align: left;
+        
+    }
+
+    .menu{
+        align-items: start;
+    }
+
 }

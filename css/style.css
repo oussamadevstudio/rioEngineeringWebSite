@@ -51,21 +51,21 @@ h1, h2, h3{
 
 a{
     text-decoration: none;
+
+    color: #f8b034d7;
 }
 
 a:not(.service-bottom-link a){
     
-
-    color: #7f7f7f;
-    mix-blend-mode: difference;
-
+    
+    
     transition: transform 0.4s ease;
 
 }
 
 a:not(.no-link-hover):hover{
     background: rgba(211, 211, 211, 0.3);
-    color: #f8b034d7;
+    color: #f29007;
 
     transform: scale(1.01);
     
@@ -135,4 +135,38 @@ ul{
 
 
 
+
+/*_________________________input_______________________*/
+
+input{
+    width: 450px;
+    height: 40px;
+
+    border: 1px solid #1e293b;
+    border-radius: 20px;
+
+    background: #1d1827;
+
+    caret-color: white;
+    color: white;
+
+    padding-left: 20px;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid #364864;
+
+    
+}
+
+
+
+/*_________________________hr_______________________*/
+
+hr{
+    margin: 50px 13.6vw 0 13.6vw;
+    
+    opacity: 10%;
+}
 
