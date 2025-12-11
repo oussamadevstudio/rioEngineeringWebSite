@@ -45,6 +45,15 @@ h1, h2, h3{
     text-align: center;
 }
 
+p{
+    font-size: clamp(13px, 1.02vw, 16px);
+}
+
+p, h1, h2, h3{
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
 
 
 /*_________________________links_______________________*/
@@ -139,7 +148,7 @@ ul{
 /*_________________________input_______________________*/
 
 input{
-    width: 450px;
+    width: clamp(90vw, 90vw, 450px);
     height: 40px;
 
     border: 1px solid #1e293b;
@@ -169,4 +178,5 @@ hr{
     
     opacity: 10%;
 }
+
 

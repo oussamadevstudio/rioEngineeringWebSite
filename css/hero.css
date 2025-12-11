@@ -45,6 +45,8 @@ p{
 @media(max-width: 400px){
     .hero-btn{
         width: 280px;
+        flex-flow: column wrap;
+        gap: 10px;
         
     }
 }

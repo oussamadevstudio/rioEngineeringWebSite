@@ -30,13 +30,13 @@
 
 .contact-text{
     padding-top: 90px;
+    
 
     display: flex;
     flex-direction: column;
-    justify-content: end;
     align-items: center;
 
-    height: 100%;
+    
 
 
     white-space: normal;
@@ -56,7 +56,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
-    padding: 0 200px;
+    padding: 0 clamp(13.64vw, 13.64vw, 200px);
 
     
 }
@@ -81,10 +81,7 @@
 
 
 
-.info2{
-    white-space: wrap;
-    
-}
+
 
 /*__________________________contact_infos_on_Phones__________________________*/
 
@@ -103,7 +100,7 @@
     }
 
     .contact-text p{
-        font-size: 10px;
+        font-size: 12px;
     }
 
 

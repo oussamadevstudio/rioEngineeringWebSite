@@ -1,7 +1,7 @@
 /*__________________big_containers__________________________*/
 .services{
     
-    padding-top: clamp(70px, 16.7vw, 90px);
+    padding-top: clamp(60px, 16.7vw, 90px);
 
     display: grid;
     justify-content: center;
@@ -19,15 +19,15 @@
 
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));  
-    grid-auto-rows: 345px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));  
+    grid-auto-rows: minmax(260px, auto);
     gap: 24px;  
-    padding: 0 64px;/*20px phones*/
+    padding: 0 clamp(20px, 4.37vw, 64px);/*20px 4.37vw 64pxphones*/
 }
 
 @media(max-width: 600px){
     .services-container{
-        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 }
 
@@ -37,7 +37,7 @@
     border: 0.1px solid rgb(222, 222, 222);
     border-radius: 13px;
 
-    padding: 20px;
+    padding: clamp(15px, 1.36vw, 20px);
 
     display: grid;
     grid-template-rows: 65px auto 1fr 30px;
@@ -58,7 +58,7 @@
 
 /*___________________text__________________________*/
 
-.services h2, h3{
+.services h2, .services h3{
     color: black;
 }
 
@@ -107,13 +107,6 @@
     background: white;
 }
 
-/*___________________button__________________________*/
-
-.serv button{
-
-    width: 100%;
-
-}
 
 /*___________________serv_hover_________________________*/
 
