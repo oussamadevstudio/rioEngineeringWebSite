@@ -36,3 +36,14 @@ span .arrow{
     
     color: #f29007;
 }
+
+/*_________________________social_media______________________*/
+.sidebar-icon{
+    transition: transform 0.4s ease;
+}
+.sidebar-icon:hover{
+    transform: scale(1.05);
+
+    fill: #f29007;
+
+}

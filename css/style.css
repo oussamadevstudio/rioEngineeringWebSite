@@ -148,7 +148,7 @@ ul{
 /*_________________________input_______________________*/
 
 input{
-    width: clamp(90vw, 90vw, 450px);
+    width: 420px;
     height: 40px;
 
     border: 1px solid #1e293b;
@@ -167,6 +167,12 @@ input:focus{
     border: 1px solid #364864;
 
     
+}
+
+@media(max-width: 900px){
+    input{
+        width: clamp(90vw, 90vw, 450px);
+    }
 }
 
 

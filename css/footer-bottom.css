@@ -26,7 +26,7 @@
 }
 
 .newsletter button{
-    width: clamp(90vw, 90vw, 450px);
+    width: 420px;
     height: 40px;
 }
 
@@ -123,6 +123,10 @@
 
     .menu{
         align-items: start;
+    }
+
+    .newsletter button{
+        width: clamp(90vw, 90vw, 450px);
     }
 
 }

@@ -41,12 +41,12 @@
         <nav>
             <ul>
                 <li><a href="#" class="no-link-hover"><img class="logo" src="assets/logo.png" alt="Rio Engineering logo"></a></li>
-                <li class="hideOnPhone"><a href="#">accueil</a></li>
-                <li class="hideOnPhone" style="white-space: nowrap"><a href="#">à propos</a></li>
-                <li class="hideOnPhone"><a href="#">services</a></li>
+                <li class="hideOnPhone"><a href="#accueil">accueil</a></li>
+                <li class="hideOnPhone" style="white-space: nowrap"><a href="#apropos">à propos</a></li>
+                <li class="hideOnPhone"><a href="#services">services</a></li>
                 <li class="hideOnPhone"><a href="#">projets</a></li>
-                <li class="hideOnPhone"><a href="" class="no-link-hover hide900px"><button class="btn-primary">contacter nous</button></a></li>
-                <li class="displayOnPhone" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                <li class="hideOnPhone"><a href="#contact" class="no-link-hover hide900px"><button class="btn-primary">contacter nous</button></a></li>
+                <li class="displayOnPhone sidebar-icon" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#f8b034d7"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
         <hero></hero>
@@ -57,7 +57,7 @@
 
 
     <main>
-        <section class="hero">
+        <section class="hero" id="accueil">
 
             <h1>LA <strong>CONFIANCE</strong> N'EST QU'UNE DES CHOSEs QUE NOUS CONSTRUISONS BIEN</h1>
             <div class="hero-paragraphe">
@@ -70,7 +70,7 @@
 
         </section>
 
-        <section class="services">
+        <section class="services" id="services">
             <div class="services-title">
                 <h2>services</h2>
                 <p>Des solutions de construction sur mesure, créées pour transformer vos idées en réalité</p>
@@ -125,7 +125,7 @@
 
 
     <footer>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="contact-text">
                 <h2>CONTACTEZ-NOUS</h2>
                 <p>Contactez-nous dès aujourd'hui pour un devis. Donnons vie à votre vision !</p>
@@ -144,7 +144,7 @@
         <hr>
 
         <section class="bottom">
-            <div class="sub-about" style="grid-area: sub-about">
+            <div class="sub-about" id="apropos" style="grid-area: sub-about">
                 <h3>RIO ENGINEERING</h3>
                 <p>Des services d’ingénierie et de construction haut de gamme, alliant expertise, précision et excellence dans chaque projet.</p>
                 <div class="social-media">
@@ -159,11 +159,11 @@
             <div class="menu" style="grid-area: menu">
                 <ul>
                     <li><h3>Menu</h3></li>
-                    <li><a href="" class="no-link-hover">accueil</a></li>
-                    <li><a href="" class="no-link-hover">à propos</a></li>
-                    <li><a href="" class="no-link-hover">services</a></li>
+                    <li><a href="#accueil" class="no-link-hover">accueil</a></li>
+                    <li><a href="#apropos" class="no-link-hover">à propos</a></li>
+                    <li><a href="#services" class="no-link-hover">services</a></li>
                     <li><a href="" class="no-link-hover">projets</a></li>
-                    <li><a href="" class="no-link-hover">contacter nous</a></li>
+                    <li><a href="contact" class="no-link-hover">contacter nous</a></li>
                 </ul>
             </div>
 
